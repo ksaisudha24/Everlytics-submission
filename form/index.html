@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="header">
+
+    <div class="inner-header flex">
+    <div id="theform">
+        <form>
+          <div class="input-container">
+            <input type="text" name="source" value="Google Cloud Storage" disabled>
+            <label for="source" id="source">Select your source:</label>
+          </div>
+          <div class="input-container">
+            <input type="text" name="pipeline" placeholder="e.g., cust_shop_energy_gateway001" id="pipeline">
+            <label for="pipeline">Provide a name for pipeline:</label>
+
+          </div>
+          <div class="input-container">
+             <input type="text" name="project" placeholder="project-id" id="project">
+            <label for="project">GCS project name:</label>
+
+          </div>
+          <div class="input-container">
+            <input type="text" name="bucket" placeholder="gs://your-bucket" id="bucket">
+            <label for="bucket">GCS bucket name:</label>
+          </div>
+          <div class="input-container">
+            <input type="text" name="cloud" placeholder="GCS location of your files" id="cloud">
+            <label for="cloud">Input Cloud Storage File(s):</label>
+          <p>Example: gs://your-bucket/your-files/01.csv</p>
+          </div>
+          <div class="input-container">
+            <input type="text" name="cred" id="cred">
+            <label for="cred">GCS credentials:</label>
+          </div>
+          <div class="input-container">
+            <input type="text" name="run" placeholder="(in minutes)" id="run">
+            <label for="run">Run every:</label>
+          </div>
+          <p id="error"></p>
+          <button type="button" name="create"  class="button" onclick="checkLengths()">Create</button>
+          <button type="button" name="cancel" class="button">Cancel</button>
+          </form>
+          </div>
+    </div>
+
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+
+    </div>
+
+    <script src="scripts.js" charset="utf-8"></script>
+
+
+  </body>
+</html>

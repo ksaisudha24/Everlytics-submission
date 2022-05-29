@@ -1,0 +1,42 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+      th{
+          color:#fff;
+              }
+  </style>
+</head>
+<body>
+  <table class="table table-striped">
+      <tr class="bg-info">
+          <th rowspan="2" colspan="3">MACHINE NAME</th>
+          <th rowspan="2" colspan="3">MACHINE ID</th>
+          <th colspan="3">ENERGY CONSUMED (kWh)</th>
+          <th rowspan="2" colspan="3">ACTIVE POWER (MW)</th>
+          <th rowspan="2" colspan="3">APPARENT POWER (MVA)</th>
+          <th rowspan="2" colspan="3">REACTIVE POWER (MVAr)</th>
+          <th rowspan="2" colspan="3">CURRENT (Amps)</th>
+          <th rowspan="2" colspan="3">VOLTAGE (Volts)</th>
+          <th rowspan="2" colspan="3">POWER FACTOR</th>
+          <th colspan="3">IDLE TIME</th>
+      </tr>
+      <tr class="bg-info">
+        <th>Today</th>
+        <th>MTD</th>
+        <th>YTD</th>
+        <th>Today</th>
+        <th>MTD</th>
+        <th>YTD</th>
+      </tr>
+      <tbody id="myTable">
+
+      </tbody>
+  </table>
+
+  <script src="scripts.js" charset="utf-8"></script>
+</body>
+</html>
